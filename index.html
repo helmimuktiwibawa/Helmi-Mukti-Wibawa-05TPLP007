@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: lightgrey;
+        }
+        nav {
+            position: fixed;
+            width: 250px;
+            height: 100%;
+            background-color: white;
+            overflow-y: auto;
+        }
+        .profil {
+            padding: 10px;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            background-color: blue;
+        }
+        .profil img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50px;
+            padding: 5px;
+        }
+        .profil p {
+            padding: 5px;
+            color: white;
+            font-size: 1em;
+        }
+        .menu {
+            padding: 10px;
+        }
+        .menu a {
+            display: flex;
+            align-items: end;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .menu img {
+            padding: 5px;
+            width: 30px;
+        }
+        .menu p {
+            padding: 5px;
+        }
+        .menu-lain {
+            padding: 10px;
+        }
+        .menu-lain h3 {
+            font-size: 1em;
+            color: grey;
+        }
+        .menu-lain a {
+            margin: 5px 0px;
+            display: flex;
+            align-items: center;
+            color: grey;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+        .menu-lain a:hover {
+            background-color: lightgrey;
+            border-radius: 5px;
+        }
+        .menu-lain img {
+            padding: 5px;
+            margin-right: 10px;
+            width: 30px;
+        }
+        .head {
+            margin-left: 250px;
+            padding: 15px;
+        }
+        .head h2 {
+            padding: 20px;
+            padding-top: 40px;
+            height: 150px;
+            background-color: white;
+            border-radius: 5px;
+            color: grey;
+        }
+        .k1 {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .kotak {
+            margin-top: -60px;
+            width: auto;
+            border-radius: 5px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        .kotak img {
+            width: 70px;
+            padding: 5px;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+        .text {
+            padding: 10px;
+        }
+        .text p {
+            padding: 5px 0px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="profil">
+            <img src="profil.jpg">
+            <div class="text">
+                <p style="font-weight: bold;">Welcome, Helmi Mukti Wibawa</p>
+                <p>Administrator</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <a href="#">
+                <img src="home.png">
+                <p>Dashboard</p>
+            </a>
+        </div>
+
+        <div class="menu-lain">
+            <h3>MENU KARYAWAN</h3>
+            <a href="karyawan.html">
+                <img src="user2.png">
+                <p>Karyawan</p>
+            </a>
+            <a href="jabatan.html">
+                <img src="adduser2.png">
+                <p>Jabatan</p>
+            </a>
+            <a href="divisi.html">
+                <img src="adduser2.png">
+                <p>Divisi</p>
+            </a>
+        </div>
+        <div class="menu-lain">
+            <h3>MENU ABSENSI</h3>
+            <a href="absensi.html">
+                <img src="absent.png">
+                <p>Absensi</p>
+            </a>
+            <a href="izin.html">
+                <img src="izin.png">
+                <p>Izin</p>
+            </a>
+            <a href="lembur.html">
+                <img src="izin.png">
+                <p>Lembur</p>
+            </a>
+        </div>
+
+        <div class="menu">
+            <a href="index.html" style="background-color: red; color: white;">
+                <img src="logout.png">
+                <p>Logout</p>
+            </a>
+        </div>
+    </nav>
+
+    <div class="head">
+        <h2>
+            Sistem Informasi Manajemen Karyawan
+            <p style="font-size: 0.8em; padding: 20px 0px; font-weight: normal;">Admin Dashboard</p>
+        </h2>
+        <div class="k1">
+            <div class="kotak" style="background-color: blue;">
+                <img src="user.png">
+                <div class="text">
+                    <p>Data</p>
+                    <p>Pegawai</p>
+                    <p style="font-size: 1.5em; font-weight: bold;">13</p>
+                </div>
+            </div>
+            <div class="kotak" style="background-color: green;">
+                <img src="absent2.png">
+                <div class="text">
+                    <p>Absensi Hari Ini</p>
+                    <p>01 November 2024</p>
+                    <p style="font-size: 1.5em; font-weight: bold;">0</p>
+                </div>
+            </div>
+            <div class="kotak" style="background-color: skyblue;">
+                <img src="izin2.png">
+                <div class="text">
+                    <p>Izin Menunggu</p>
+                    <p>Konfirmasi</p>
+                    <p style="font-size: 1.5em; font-weight: bold;">2</p>
+                </div>
+            </div>
+            <div class="kotak" style="background-color: blueviolet;">
+                <img src="izin2.png">
+                <div class="text">
+                    <p>Lembur Menunggu</p>
+                    <p>Konfirmasi</p>
+                    <p style="font-size: 1.5em; font-weight: bold;">1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
